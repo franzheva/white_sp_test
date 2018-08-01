@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="White Space Test"  description="">
+        <siteMapNode url="~\Default.aspx" title="Main"  description="" />
+      <siteMapNode title="Clients Data">
+        <siteMapNode url="~\Clients Data\Clients.aspx" title="Clients"  description="" />
+        <siteMapNode title="Handbooks">
+          <siteMapNode title="Companies" url="~\Handbooks\Companies.aspx"/>
+          <siteMapNode title="Cities" url="~\Handbooks\Cities.aspx"/>
+        </siteMapNode>
+      </siteMapNode>
+        
+    </siteMapNode>
+</siteMap>

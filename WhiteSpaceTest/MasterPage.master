@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form" runat="server" style="width:900px; margin:auto">
+    <div>
+        <table style="width:900px" border="1">
+            <tr style="height:100px">
+                <td colspan="2" >
+                   
+                </td>
+            </tr>
+<tr>
+<td colspan="2">
+    <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+
+</td>
+</tr>
+<tr>
+    <td style="width:100px">
+        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource" ExpandDepth="1"></asp:TreeView>
+        <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
+    </td>
+    <td style="clip: rect(auto auto auto auto); overflow: auto; text-align: center; vertical-align: top">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" ValidateRequestMode="Disabled"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+    </td>
+</tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
